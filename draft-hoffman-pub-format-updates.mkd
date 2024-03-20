@@ -1,0 +1,100 @@
+---
+title: Updates to RFC Publication Formats
+abbrev: Format updates
+docname: draft-hoffman-pub-format-updates-00
+
+stand_alone: true
+v: 3
+updates: 7992, 7994, 7995
+
+ipr: trust200902
+kw: Internet-Draft
+cat: info
+submissionType: editorial
+
+author:
+ -
+   ins: P. Hoffman
+   name: Paul Hoffman
+   org: ICANN
+   email: paul.hoffman@icann.org
+
+normative:
+  I-D.rswg-rfc7990-updates:
+  RFC7992:
+  RFC7994:
+
+informative:
+  I-D.rswg-xml2rfcv3-implemented:
+  RFC7995:
+
+--- abstract
+
+draft-rswg-rfc7990-updates, the successor to RFC 7990, defines the definitive version of an RFC as a published RFC with is in RFCXML.
+It defines publication versions of the RFC as published RFCs in the publication formats which currently are PDF, plain text, and HTML.
+draft-rswg-xml2rfcv3-implemented is updating the specification for the RFCXML format;
+it is also updating RFC 7995, the publication format for PDF.
+This document updates the publication formats for plain text and HTML, as defined in RFC 7994 and RFC 7992, respectively.
+
+<!--
+This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
+-->
+There is a repository for this draft at <https://github.com/paulehoffman/draft-rswg-rfc7990-updates>.
+
+--- middle
+
+# Introduction
+
+This document updates three RFCs that define the publication formats for RFCs in plain-text and HTML formats.
+It updates "Requirements for Plain-Text RFCs" ({{RFC7994}}) and "HTML Format for RFCs" ({{RFC7992}}).
+It does not update "PDF Format for RFCs" ({{RFC7995}}) because {{I-D.rswg-rfc7990-updates}} makes those updates.
+
+It is important to note that this document does not update {{I-D.rswg-xml2rfcv3-implemented}}.
+That is, this document updates only some of the publication formats for RFCs, not the definitive format (RFCXML).
+
+# HTML Publication Format
+
+## Additional Information about an RFC
+
+This document significantly changes Section 6 of {{RFC7992}} to say that the front matter will contain significantly more information than is specified in {{RFC7992}}.
+In specific, the HTML will include the metadata currently visible in the "HTMLized" version of RFCs seen in the IETF Datatracker.
+This includes links to the following:
+
+- The Datatracker page for the RFC
+- Errata for the RFC
+- How to report errata for the RFC
+- The Datatracker page(s) for the author(s) of the RFC
+
+It will also include a link to the Datatracker page for the draft that became the RFC, links to including earlier versions of that draft, and the ability to comapre earlier version of the RFC with the RFC and with each other.
+
+# Plain Text Publication Format
+
+## Line Length
+
+Section 4.3 of {{RFC7994}} says:
+
+> Each line must be limited to 72 characters followed by the character sequence that denotes an end-of-line (EOL).
+
+This document updates that limit to 100 characters.
+The primary reason for this update is that the 72-character limit forced document authors to constrain the examples they use.
+With a wider maximum line limit, those authors can construct more accurate and more useful examples, and thus improve the quality of the RFC Series.
+
+Note that the 72-character limit was imposed when RFCs were all in the plain-text format and commonly printed on printers with an 80-character line limit.
+Printing from the plain-text format of modern RFCs happens tremendously less often than earlier.
+Even in cases where someone prints a plain-text publication format RFC with lines longer than what that can fit on the page, the reader will immediately see the problem and can instead read from the HTML or PDF format for the same RFC.
+
+
+# IANA Considerations
+
+This document has no IANA considerations.
+
+
+# Security Considerations
+
+Changing the formats for plain-text and HTML publication versions of RFCs is not expected to cause any security issues.
+
+# Acknowledgments
+
+This document is inspired by many suggestions from people in the RSWG.
+
+--- back
