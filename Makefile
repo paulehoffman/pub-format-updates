@@ -1,13 +1,6 @@
-all: draft-hoffman-pub-format-updates.txt draft-hoffman-pub-format-updates.html
+DOC = draft-hoffman-pub-format-updates
+all: $(DOC).mkd
+	kdrfc -c -t -h $(DOC).mkd
+	rm $(DOC).xml
+	mv $(DOC).v2v3.xml $(DOC).xml
 
-.PRECIOUS: %.xml
-
-%.txt: %.xml
-	xml2rfc $< --text
-
-%.html: %.xml
-	xml2rfc $< --html
-
-%.xml: %.mkd
-	kramdown-rfc $< >$@.new
-	mv $@.new $@

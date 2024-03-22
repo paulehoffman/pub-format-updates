@@ -5,7 +5,7 @@ docname: draft-hoffman-pub-format-updates-00
 
 stand_alone: true
 v: 3
-updates: 7992, 7994, 7995
+updates: 7992, 7994
 
 ipr: trust200902
 kw: Internet-Draft
@@ -26,15 +26,19 @@ normative:
 
 informative:
   I-D.rswg-xml2rfcv3-implemented:
+  RFC7993:
   RFC7995:
+  RFC7996:
+  RFC7998:
 
 --- abstract
 
 draft-rswg-rfc7990-updates, the successor to RFC 7990, defines the definitive version of an RFC as a published RFC with is in RFCXML.
-It defines publication versions of the RFC as published RFCs in the publication formats which currently are PDF, plain text, and HTML.
-draft-rswg-xml2rfcv3-implemented is updating the specification for the RFCXML format;
-it is also updating RFC 7995, the publication format for PDF.
-This document updates the publication formats for plain text and HTML, as defined in RFC 7994 and RFC 7992, respectively.
+It defines publication versions of the RFC as published RFCs in the publication formats such as PDF, plain text, and HTML.
+draft-rswg-xml2rfcv3-implemented is updating the specification for the RFCXML format.
+This document updates some of the publication formats, specifically updating RFC 7994 and RFC 7995.
+
+(If this draft is adopted by the RSWG, it might also update other RFCs related to publication formats.)
 
 <!--
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
@@ -45,9 +49,19 @@ There is a repository for this draft at <https://github.com/paulehoffman/draft-r
 
 # Introduction
 
-This document updates three RFCs that define the publication formats for RFCs in plain-text and HTML formats.
-It updates "Requirements for Plain-Text RFCs" ({{RFC7994}}) and "HTML Format for RFCs" ({{RFC7992}}).
+This document updates the RFCs that define the publication formats for RFCs in plain-text and HTML formats.
+It updates
+"HTML Format for RFCs" ({{RFC7992}}).
+and
+"Requirements for Plain-Text RFCs" ({{RFC7994}})
 It does not update "PDF Format for RFCs" ({{RFC7995}}) because {{I-D.rswg-rfc7990-updates}} makes those updates.
+
+Future versions of this draft might also update
+"Cascading Style Sheets (CSS) Requirements for RFCs" ({{RFC7993}}), 
+"SVG Drawings for RFCs: SVG 1.2 RFC" ({{RFC7996}}),
+and
+"'xml2rfc' Version 3 Preparation Tool Description" ({{RFC7998}}),
+but does not do so yet.
 
 It is important to note that this document does not update {{I-D.rswg-xml2rfcv3-implemented}}.
 That is, this document updates only some of the publication formats for RFCs, not the definitive format (RFCXML).
