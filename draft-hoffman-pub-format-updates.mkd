@@ -5,7 +5,7 @@ docname: draft-hoffman-pub-format-updates-00
 
 stand_alone: true
 v: 3
-updates: 7992, 7994, 7995, 8153
+updates: 7990, 7992, 7994, 7995, 8153
 
 ipr: trust200902
 kw: Internet-Draft
@@ -20,6 +20,7 @@ author:
    email: paul.hoffman@icann.org
 
 normative:
+  RFC7990:
   RFC7992:
   RFC7994:
   RFC7995:
@@ -36,9 +37,9 @@ informative:
 draft-rswg-rfc7990-updates, the successor to RFC 7990, defines the definitive version of an RFC as a published RFC with is in RFCXML.
 It defines publication versions of the RFC as published RFCs in the publication formats such as PDF, plain text, and HTML.
 draft-rswg-xml2rfcv3-implemented is updating the specification for the RFCXML format.
-This document updates some of the publication formats, specifically updating RFC 7992, RFC 7994, RFC 7995, and RFC 8153.
 
-(If this draft is adopted by the RSWG, it might also update other RFCs related to publication formats.)
+This document updates some of the publication formats, specifically updating RFC 7992, RFC 7994, RFC 7995, and RFC 8153.
+Because RFC 7990 mentions some of the features of the publication formats, this document also updates RFC 7990.
 
 <!--
 This draft is part of the RFC Series Working Group (RSWG); see <https://datatracker.ietf.org/edwg/rswg/documents/>.
@@ -46,6 +47,12 @@ This draft is part of the RFC Series Working Group (RSWG); see <https://datatrac
 There is a repository for this draft at <https://github.com/paulehoffman/pub-format-updates>.
 
 --- middle
+
+<!--
+
+For text format, consider RFC 8792
+
+-->
 
 # Introduction
 
@@ -62,6 +69,8 @@ Future versions of this draft might also update
 and
 "'xml2rfc' Version 3 Preparation Tool Description" ({{RFC7998}}),
 but does not do so yet.
+
+Because {{RFC7990}} mentions some of the features of the publication, this document also updates {{RFC7990}}.
 
 It is important to note that this document does not update {{I-D.rswg-xml2rfcv3-implemented}}.
 That is, this document updates only some of the publication formats for RFCs, not the definitive format (RFCXML).
@@ -117,6 +126,6 @@ Changing the formats for plain-text and HTML publication versions of RFCs is not
 
 # Acknowledgments
 
-This document is inspired by many suggestions from people in the RSWG.
+This document is inspired by many suggestions from many people in the RSWG.
 
 --- back
