@@ -1,7 +1,7 @@
 ---
 title: Updates to RFC Publication Formats
 abbrev: Format updates
-docname: draft-hoffman-pub-format-updates-00
+docname: draft-hoffman-pub-format-updates-01
 
 stand_alone: true
 v: 3
@@ -106,14 +106,26 @@ Section 4.3 of {{RFC7994}} says:
 
 > Each line must be limited to 72 characters followed by the character sequence that denotes an end-of-line (EOL).
 
-This document updates that limit to 100 characters.
-The primary reason for this update is that the 72-character limit forced document authors to constrain the examples they use.
+This document updates that limit to 100 characters for tables and figures (such as examples, blocks of code, ASCII art, and so on).
+The primary reason for this update is that the 72-character limit forced document authors to constrain the figures they use.
 With a wider maximum line limit, those authors can construct more accurate and more useful examples, and thus improve the quality of the RFC Series.
+The RPC will still wrap headings and lines of running text at 72 characters.
 
 Note that the 72-character limit was imposed when RFCs were all in the plain-text format and commonly printed on printers with an 80-character line limit.
 Printing from the plain-text format of modern RFCs happens tremendously less often than earlier.
 Even in cases where someone prints a plain-text publication format RFC with lines longer than what that can fit on the page, the reader will immediately see the problem and can instead read from the HTML or PDF format for the same RFC.
 
+## Pagination
+
+Secton 4 of {{RFC7994}} says:
+
+> One plain-text output will be created during the publication process with basic pagination that includes a form feed instruction every 58 lines at most, including blank lines.
+
+This document updates that to say:
+
+> The plain-text output will be created during the publication process with no pagination.
+
+The RPC has not been paginating the text output of RFCs since when it started issuing the three publication formats, so this change does not affect the operation of the RPC, and simply reflects reality.
 
 # IANA Considerations
 
