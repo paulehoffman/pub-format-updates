@@ -100,6 +100,16 @@ This includes links to the following:
 
 It will also include a link to the Datatracker page for the draft that became the RFC, links to including earlier versions of that draft, and the ability to comapre earlier version of the RFC with the RFC and with each other.
 
+## JavaScript
+
+Section 2 of {{RFC7992}} says:
+
+> JavaScript ... may, on a limited basis, add additional text that provides post-publication metadata or pointers if warranted.  All such text will be clearly marked as additional.
+
+This is updated to say:
+
+> JavaScript ... may add text that provides post-publication metadata or pointers.
+
 
 # Plain Text Publication Format
 
