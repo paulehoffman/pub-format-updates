@@ -75,6 +75,7 @@ Because {{RFC7990}} mentions some of the features of the publication, this docum
 It is important to note that this document does not update {{I-D.rswg-xml2rfcv3-implemented}}.
 That is, this document updates only some of the publication formats for RFCs, not the definitive format (RFCXML).
 
+
 # PDF Publication Format
 
 ## Move Requirement from PDF/A-3 to PDF/A
@@ -82,6 +83,7 @@ That is, this document updates only some of the publication formats for RFCs, no
 This document updates {{RFC7995}} and {{RFC8153}} by changing the requirement from using the PDF/A-3 standard to using the PDF/A standard,
 and by dropping the requirement that the XML be embedded in the PDF publication version.
 Other parts of {{RFC8153}}, particularly the need to archive metadata about RFCs, are not changed.
+
 
 # HTML Publication Format
 
@@ -97,6 +99,7 @@ This includes links to the following:
 - The Datatracker page(s) for the author(s) of the RFC
 
 It will also include a link to the Datatracker page for the draft that became the RFC, links to including earlier versions of that draft, and the ability to comapre earlier version of the RFC with the RFC and with each other.
+
 
 # Plain Text Publication Format
 
@@ -126,6 +129,7 @@ This document updates that to say:
 > The plain-text output will be created during the publication process with no pagination.
 
 The RPC has not been paginating the text output of RFCs since when it started issuing the three publication formats, so this change does not affect the operation of the RPC, and simply reflects reality.
+
 
 # IANA Considerations
 
