@@ -145,10 +145,9 @@ The RPC has not been paginating the text output of RFCs since when it started is
 
 This document has no IANA considerations.
 
-
 # Security Considerations
 
-Changing the formats for plain-text and HTML publication versions of RFCs is not expected to cause any security issues.
+Changing the formats for publication versions of RFCs is not expected to cause any security issues.
 
 # Acknowledgments
 
